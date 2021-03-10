@@ -1,0 +1,10 @@
+85aadb79af2a3cb23732d37234318b41  Server_base.h
+8aa8c2c859baae5f33004c839679bec4  main.cpp
+8bfcd22353c3a57fee561ad86ee2a56b  reconf
+22fec18882653be9e7cd7a6d4cd24ec0  configure.ac
+bc684353cbd3d93b77192392fc235991  Makefile.am
+66b82dd8a69b34426b1a1367d226cda5  Makefile.am.ide
+f55c60f65998ee79e8f8ba68eb0cbff2  Server.cpp
+091f8a788880a2922a54dd82656eeb4d  Server_base.cpp
+2b2faa5cfc83438427491f4be5d6ee59  build.sh
+8ad8e447ae09c213a5ba87c81565ed26  Server.h
