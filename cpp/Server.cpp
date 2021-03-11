@@ -286,7 +286,7 @@ int Server_i::serviceFunction()
         		exit(EXIT_FAILURE);
         	}
         	address.sin_family = AF_INET;
-        	address.sin_addr.s_addr = inet_addr("172.24.85.108");
+        	address.sin_addr.s_addr = INADDR_ANY;
         	address.sin_port = htons(PORT);
 
         	// Forcefully attaching socket to the port 8080
@@ -310,6 +310,7 @@ int Server_i::serviceFunction()
         	{
         	valread = read(new_socket , buffer, 1024);
         	printf("%s\n",buffer );
+		LOG_INFO(Server_i, buffer);
                 memset(&buffer, 0, sizeof(buffer));
         	i = 0;
         	while((buffer[i++] = getchar()) != '\n');
