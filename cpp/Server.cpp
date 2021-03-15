@@ -314,7 +314,7 @@ int Server_i::serviceFunction()
                 memset(&buffer, 0, sizeof(buffer));
         	i = 0;
         	while((buffer[i++] = getchar()) != '\n');
-        	send(new_socket , buffer , strlen(buffer) , 0 );
+        	send(new_socket , hello , strlen(hello) , 0 );
                 printf("Meesage sent\n");
         	}
         	return 0;
