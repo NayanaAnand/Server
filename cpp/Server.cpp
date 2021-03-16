@@ -313,7 +313,6 @@ int Server_i::serviceFunction()
 		LOG_INFO(Server_i, buffer);
                 memset(&buffer, 0, sizeof(buffer));
         	i = 0;
-        	while((buffer[i++] = getchar()) != '\n');
         	send(new_socket , hello , strlen(hello) , 0 );
                 printf("Meesage sent\n");
         	}
